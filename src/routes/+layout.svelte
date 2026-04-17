@@ -9,3 +9,7 @@
 </svelte:head>
 
 {@render children()}
+
+<footer>
+	<p>© Polimi 2026</p>
+</footer>

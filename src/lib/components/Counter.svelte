@@ -1,5 +1,7 @@
 <script>
-    let count = $state(0)
+    let props = $props()
+
+    let count = $state(props.initialCount)
     let doubled = $derived (count * 2)
 </script>
 

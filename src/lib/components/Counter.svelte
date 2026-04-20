@@ -1,12 +1,11 @@
 <script>
-    let props = $props()
+    let { initialCount } = $props()
 
-    let count = $state(props.initialCount)
-    let doubled = $derived (count * 2)
+    let doubled = $derived (initialCount * 2)
 </script>
 
-<button onclick={() => count++ }>
-    clicks: {count}
+<button onclick={() => initialCount++ }>
+    clicks: {initialCount}
 </button>
 
-<span>double is {doubled}</span>
+<span>doubled is {doubled}</span>

@@ -2,6 +2,8 @@
     import Counter from "$lib/components/Counter.svelte";
 
     let count = $state(5)
+
+    $inspect(count);
 </script>
 
 <h1>Welcome to SvelteKit</h1>

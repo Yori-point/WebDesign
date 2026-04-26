@@ -12,7 +12,9 @@
 
 <Counter bind:initialCount={count}/>
 
-<p>count parent is {count}</p>
+{#if count == 10 || count == 20}
+    <p>count parent is {count}</p>
+{/if}
 
 <Canvas />
 

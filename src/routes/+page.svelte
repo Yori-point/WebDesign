@@ -14,6 +14,8 @@
 
 {#if count > 10 && count < 20}
     <p>count parent is {count}</p>
+{:else if count >30}
+    <p>wow! That's a lot of clicks!</p>
 {:else}
     <p>count is not in range</p>
 {/if}

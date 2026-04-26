@@ -12,7 +12,7 @@
 
 <Counter bind:initialCount={count}/>
 
-<p>count parents is {count}</p>
+<p>count parent is {count}</p>
 
 <Canvas />
 

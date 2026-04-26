@@ -1,6 +1,7 @@
 <script>
     import Canvas from "$lib/components/Canvas.svelte";
     import Counter from "$lib/components/Counter.svelte";
+    import TodoList from "$lib/components/TodoList.svelte";
 
     let count = $state(5)
 
@@ -21,6 +22,8 @@
 {/if}
 
 <Canvas />
+
+<TodoList />
 
 <style>
     h1 {

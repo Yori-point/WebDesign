@@ -1,13 +1,13 @@
 <script>
     let todos = $state([
         {title: "Assignment 1", done: false},
-        {title: "Assignment 2", done: true},
+        {title: "<i>Assignment 2</i>", done: true},
         {title: "Assignment 3", done: false},
     ])
 
         let groceries = $state([
-        {title: "Apple", done: false},
-        {title: "Bread", done: false},
+        {title: "Apple", done: true},
+        {title: "<b>Bread</b>", done: false},
         {title: "Salmon", done: false},
     ])
 </script>

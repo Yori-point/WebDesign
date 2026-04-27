@@ -36,3 +36,11 @@
         {@render todoItem(grocery)}
     {/each} 
 </ul>
+
+<style>
+    label {
+        i { color: green}
+ 
+        b { color: blue}
+    }
+</style>

@@ -5,23 +5,27 @@
         {title: "Assignment 3", done: false},
     ])
 
-        let todos = $state([
+        let groceries = $state([
         {title: "Apple", done: false},
         {title: "Bread", done: false},
         {title: "Salmon", done: false},
     ])
 </script>
 
+{#snippet todoItem(todo)}
+    <li>
+      <label>
+          <input type="checkbox" bind:checked={todo.done}>
+         {todo.title}
+         </label>
+  </li>
+{/snippet}
+
 <h3>Todo List</h3>
 
 <ul>
     {#each todos as todo}
-        <li>
-            <label>
-                <input type="checkbox" bind:checked={todo.done}>
-                {todo.title}
-            </label>
-        </li>
+        {@render todoItem(todo)}
     {/each}
 </ul>
 
@@ -29,11 +33,6 @@
 
 <ul>
     {#each groceries as grocery}
-        <li>
-            <label>
-                <input type="checkbox" bind:checked={grocery.done}>
-                {grocery.title}
-            </label>
-        </li>
-    {/each}
+        {@render todoItem(grocery)}
+    {/each} 
 </ul>

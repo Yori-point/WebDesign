@@ -5,13 +5,17 @@
 
     let count = $state(5)
 
-    $inspect(count);
+    $inspect("Count is:", count);
 </script>
 
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
-<Counter bind:initialCount={count}/>
+<Counter 
+    bind:initialCount={count} 
+    willIncrement={(count) => console.log("Count was:", count)}
+    didIncrement={(count) => console.log("Count has become:", count)}
+    />
 
 {#if count > 10 && count < 20}
     <p>count parent is {count}</p>

@@ -16,7 +16,7 @@
     <li>
       <label>
           <input type="checkbox" bind:checked={todo.done}>
-         {todo.title}
+         {@html todo.title}
          </label>
   </li>
 {/snippet}

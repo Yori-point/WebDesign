@@ -38,7 +38,7 @@
 </ul>
 
 <style>
-    label {
+    label :global{
         i { color: green}
  
         b { color: blue}

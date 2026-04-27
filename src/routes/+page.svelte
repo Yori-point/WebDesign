@@ -1,15 +1,20 @@
 <script>
+    import { website } from "$lib/state.svelte"
+
     import Canvas from "$lib/components/Canvas.svelte";
     import Counter from "$lib/components/Counter.svelte";
     import TodoList from "$lib/components/TodoList.svelte";
+    import TitleEditor from "$lib/components/TitleEditor.svelte";
 
     let count = $state(5)
 
-    $inspect("Count is:", count);
+    $inspect("Count is:", count); 
 </script>
 
-<h1>Welcome to SvelteKit</h1>
+<h1>{website.title}</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
+<TitleEditor />
 
 <Counter 
     bind:initialCount={count} 

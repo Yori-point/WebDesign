@@ -386,11 +386,13 @@
     <div class="hero-top">
       <div class="logo">Yori</div>
       <nav>
-        <a href="#hero">About</a>
-        <a href="https://www.instagram.com/webdesign_ddc" target="_blank" rel="noreferrer">
-          @webdesign_ddc
+        <a href="https://www.instagram.com/tramonto0.7?igsh=eWtycDRkaGE2cjlp&utm_source=qr" target="_blank" rel="noreferrer">
+            About
         </a>
-      </nav>
+        <a href="https://www.instagram.com/webdesign_ddc" target="_blank" rel="noreferrer">
+            @webdesign_ddc
+        </a>
+    </nav>
     </div>
     <div class="hero-inner">
       <div class="hero-left">

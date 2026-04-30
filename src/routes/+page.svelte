@@ -882,4 +882,68 @@
       padding-top: 24px;
     }
   }
+  
+  @media (max-width: 768px) {
+  .hero {
+    padding: 32px 24px 72px;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+
+  .hero-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-top: 72px;
+  }
+
+  .hero-left h1 {
+    font-size: clamp(3.4rem, 14vw, 5rem);
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+  }
+
+  .intro-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+    justify-self: auto;
+  }
+
+  .stats-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    justify-items: center;
+  }
+
+  .stat-card {
+    width: 140px;
+  }
+
+  .city-card,
+  .city-card:visited,
+  .city-card:hover,
+  .city-card:active {
+    color: #1b1f1a;
+    text-decoration: none;
+  }
+}
 </style>

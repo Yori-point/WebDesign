@@ -115,6 +115,15 @@
             { name: 'Riomaggiore', map: 'https://www.google.com/maps/search/?api=1&query=Riomaggiore' }
           ]
         }
+        ,
+        {
+          id: 'imperia',
+          name: 'Imperia',
+          note: 'A quiet Ligurian shore, with sea wind, faded colors, and the feeling of passing through summer.',
+          places: [
+            { name: 'Parasio', map: 'https://www.google.com/maps/search/?api=1&query=Parasio' }
+          ],
+        }
       ]
     },
     {
